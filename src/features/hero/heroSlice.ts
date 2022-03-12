@@ -85,8 +85,7 @@ export const selectHero = (state: RootState) => {
     if (heroes.length === 0) {
         return undefined
     }
-    // const seed = Math.floor(new Date().getTime() / 1000 / 86400)
-    const seed = 8
+    const seed = Math.floor(new Date().getTime() / 1000 / 86400)
     return heroes[Math.floor(mulberry32(seed)() * heroes.length)]
 };
 
