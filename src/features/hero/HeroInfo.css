@@ -1,0 +1,54 @@
+.hero-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+}
+
+.hero-info .portrait {
+  width: 256px;
+}
+
+.hero-info .portrait .bar.health {
+  background: #3c8038;
+}
+
+.hero-info .portrait .bar.mana {
+  background: #2a64d4;
+}
+
+.hero-info .portrait .bar .regen {
+  font-size: 0.7rem;
+  float: right;
+  height: 1rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+.hero-info .stats {
+  display: flex;
+  flex-direction: row;
+}
+
+.hero-info .stats .group {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  margin: 20px;
+}
+
+.hero-info .stats .group .title {
+  margin-bottom: 20px;
+  color: #969696;
+}
+
+.hero-info .stats .group .stat {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #b5b5b5;
+}
+
+.hero-info .stats .group .value .secondary {
+  font-size: 0.7rem;
+}
